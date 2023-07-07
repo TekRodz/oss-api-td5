@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: "Run tests"
-        run: npm run test
+        run: node --experimental-vm-modules node_modules/jest/bin/jest.js
 
       - name: "Run eslint"
         run: npx eslint main.js
